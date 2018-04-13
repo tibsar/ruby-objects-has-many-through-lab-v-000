@@ -4,11 +4,15 @@ class Doctor
 
   def initialize
     @appointments = []
-  end 
+  end
 
   def add_appointment(appointment)
     @appointments << appointment
+  end
+
+  def patients 
+    @appointments.collect{ |appointment| appointment.patient }.uniq 
   end 
 
-  
+
 end
