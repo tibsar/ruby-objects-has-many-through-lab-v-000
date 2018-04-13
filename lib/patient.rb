@@ -2,14 +2,14 @@ class Patient
   attr_accessor :name
   attr_reader :appointments
 
-  def initialize 
+  def initialize
     @appointments = []
-  end 
+  end
 
   def add_appointment(appointment)
     @appointments << appointment
-  end 
+  end
 
-  
+
 
 end
